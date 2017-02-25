@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.Azure.Mobile;
 
 namespace AdvertTest.Droid
 {
@@ -17,6 +18,7 @@ namespace AdvertTest.Droid
 			base.OnCreate (bundle);
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
+			MobileCenter.Configure("215be87a-c5d8-4fd5-a458-6611858e015d");
 			LoadApplication (new AdvertTest.App ());
 		}
 	}
