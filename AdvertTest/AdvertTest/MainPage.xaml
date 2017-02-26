@@ -2,10 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AdvertTest"
+             xmlns:controls="clr-namespace:AdvertTest.Controls"
              x:Class="AdvertTest.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Text="Hello" TextColor="White" Grid.Row="0"/>
+        <controls:AdView Grid.Row="1"/>
+    </Grid>
 
 </ContentPage>
